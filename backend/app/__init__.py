@@ -1,0 +1,1 @@
+"""Wind Procurement Intelligence API."""

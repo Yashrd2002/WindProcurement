@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+backend/*.egg-info/
+
+# Node/Vite
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Environment and editor state
+.env
+backend/.env
+.DS_Store
+.idea/
+.vscode/
+
+# Test and coverage output
+coverage.xml
+htmlcov/
+
+# Documentation
+docs/
