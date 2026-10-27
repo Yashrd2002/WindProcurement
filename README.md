@@ -66,11 +66,11 @@ Evaluated across all 1,488 settlement periods (31 days × 48 half-hour intervals
 
 ```mermaid
 flowchart LR
-    User([Procurement Trader]) -->|Browser| UI[React 19 + TypeScript + Vite]
-    UI -->|REST / JSON| API[FastAPI Application]
-    API -->|In-Process| Cache[(In-Memory TTL Cache<br/>TTL: 3600s)]
-    API -->|HTTPS| Elexon[Elexon BMRS Streams<br/>FUELHH: Actual Wind<br/>WINDFOR: Forecasts]
-    API -.->|HTTPS (Optional)| OpenAI[OpenAI API<br/>GPT-4o-mini Copilot]
+    User(["Procurement Trader"]) -->|"Browser"| UI["React 19 + TypeScript + Vite"]
+    UI -->|"REST / JSON"| API["FastAPI Application"]
+    API -->|"In-Process"| Cache[("In-Memory TTL Cache<br/>TTL: 3600s")]
+    API -->|"HTTPS"| Elexon["Elexon BMRS Streams<br/>FUELHH: Actual Wind<br/>WINDFOR: Forecasts"]
+    API -.->|"HTTPS (Optional)"| OpenAI["OpenAI API<br/>GPT-4o-mini Copilot"]
 ```
 
 - **Frontend:** React 19, TypeScript, Vite, Vanilla CSS design tokens (responsive glassmorphic UI, custom accessible SVG time-series charts, zero heavyweight UI bloat).
